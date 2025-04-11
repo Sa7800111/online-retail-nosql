@@ -15,9 +15,9 @@ def connect_mongodb():
 def connect_redis():
     """Connect to Redis and return the client."""
     redis_client = redis.StrictRedis(
-        host="redis-14372.c327.europe-west1-2.gce.redns.redis-cloud.com",  # Redis host
-        port=14372,  # Redis port
-        password="d52EJB8uN7y2AJmuvqZII6bO7u3cln6S",  # Redis password
+        host="",  # Redis host
+        port=,  # Redis port
+        password="",  # Redis password
         decode_responses=True  # Decode responses to strings
     )
     return redis_client
@@ -25,9 +25,9 @@ def connect_redis():
 # Neo4j Connection
 def connect_neo4j():
     """Connect to Neo4j and return the driver."""
-    uri = "neo4j+s://ad9e573f.databases.neo4j.io"  # Neo4j URI
-    username = "neo4j"  # Neo4j username
-    password = "Re2gDfCKz1ZTx4Y_-2gWZc-hAyneu3jV63e1iIUEleU"  # Neo4j password
+    uri = ""  # Neo4j URI
+    username = ""  # Neo4j username
+    password = ""  # Neo4j password
     driver = GraphDatabase.driver(uri, auth=(username, password))
     return driver
 
