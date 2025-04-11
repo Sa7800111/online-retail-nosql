@@ -6,7 +6,7 @@ from neo4j import GraphDatabase
 # MongoDB Connection
 def connect_mongodb():
     """Connect to MongoDB and return the collection."""
-    client = MongoClient("mongodb+srv://sangeeth_sanjeev:sangeeth@cluster0.8da2n.mongodb.net")  # MongoDB connection string
+    client = MongoClient("mongodb.mongodb.net")  # MongoDB connection string
     db = client["RetailDB"]  # Replace with your database name
     collection = db["RetailTransactions"]  # Replace with your collection name
     return collection
